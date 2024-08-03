@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background-color: #141414; */
+}
+/* header */
+.header
+{
+    width: 100%;
+   
+    padding: 0 5%;
+    /* background-color: rgb(15, 15, 15); */
+    /* background-color: transparent; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+
+}
+.background
+{
+    background-color: #141414;
+    position: fixed;
+    top: 0;
+    
+}
+
+.logo
+{
+
+    width: 15%;
+    height: 65px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+.logo-img
+{
+   width: 60%; 
+   height: 30px;
+   align-items: center;
+}
+.search
+{
+    width: 30%;
+    height: 65px;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar
+{
+    width: 80%;
+    height: 40%;
+    /* background-color: brown; */
+    display: flex;
+    /* border: 1px solid white; */
+    border-radius: 12px;
+}
+.inp-box
+{
+    width: 80%;
+    height: 100%;
+    outline: none;
+    border: none;
+    text-indent: 20px;
+    border-radius: 10px 0 0 10px;
+}
+.search-icon
+{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* Banner */
+
+.banner
+{
+    width: 100%;
+    height: 600PX;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #141414;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('https://www.hindustantimes.com/ht-img/img/2023/10/19/original/F8xfHK_aYAAm_2c_1697706581727.jpeg');   
+    /* padding: 30px 5%; */
+    display: flex;
+    flex-direction: column;
+   
+}
+.ban-logo{
+    width: 30%;
+    height: 200px;
+    margin-top: 60px;
+    padding: 30px 5%
+    /* background-color:blanchedalmond ; */
+}
+.ban-logo img
+{
+    height: 100%;
+    
+}
+
+.ban-desc
+{
+    width: 40%;
+    padding: 0 5%;
+    /* background-color: blueviolet; */
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+.ban-desc-title
+{
+color: white;
+font-size: 40px;
+margin-bottom: 10px;
+}
+.btn
+{
+    margin-top: 8px;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(238, 0, 0);
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1000;
+    transition: .3s;
+    display: inline-block;
+    transition: .3s;
+}
+.btn:hover
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.btn1{
+    margin-top:20px ;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: bold;
+    transition: .3s;
+    display: inline-block;
+}
+.btn1:hover
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.banner-fade
+{
+    /* padding: -30px -5%; */
+    width: 100%;
+    height: 50px;
+    margin-top: 90px;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111);
+}
+
+
+
+
+/* Movie Section */
+
+.movie-section
+{
+    width: 100%;
+    min-height: 500px;
+    background-color: #141414;
+    padding: 30px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.movie-title{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    color: rgb(217, 229, 240);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    /* content-visibility: hidden; */
+}
+.movies{
+    padding-top: 50px;
+    width: 100%;
+    background-color: #141414;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 5.33%;
+    row-gap: 50px;
+}
+.movie{
+    width: 21%;
+    height: 140px;
+    background-color: white;
+    position: relative;
+    justify-content: flex-start;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+.movie img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 5px;
+
+}
+.movie-layer
+{
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 11%;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s;
+    border-radius: 3px;
+    box-shadow: 0 0 10px black; ;
+}
+.movie-layer:hover
+{
+    opacity: .7;
+}
+.btn-text
+{
+    
+}
+
+
+/* footer Section */
+
+
+.footer
+{
+    width: 100%;
+    padding: 0 10%;
+    background-color: #141414;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+.footer-section
+{
+    width: 80%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.social-media
+{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    font-size: 25px;
+    column-gap: 3%;
+    padding-left:22px ;
+    /* background-color: bisque; */
+    color: white;
+    justify-content: flex-start;
+}
+.social-media i{
+    cursor: pointer;
+}
+
+.social-media i:hover{
+    color: red;
+}
+
+.quick-list
+{
+    width: 100%;
+    height: 100px;
+    /* background-color: blueviolet; */
+}
+.quick-list ul
+{
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}
+.quick-list ul li
+{
+    padding: 2px;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.footer-logo
+{
+    width: 20%;
+    height: 90px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.footer-logo-img
+{
+    width: 70%;
+    height: 60%;
+
+}
+.service-btn
+{
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: gray;
+    background-color:transparent;
+    outline: none;
+    border: 1px solid gray;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 22px;
+}
+.service-btn:hover{
+    color:white;
+    cursor: pointer;
+}
